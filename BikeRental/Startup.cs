@@ -18,7 +18,7 @@ namespace BikeRental {
         public void ConfigureServices(IServiceCollection services) {
             services.AddMvc();
 
-            services.AddDbContext<BikeContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("MSSQLLocalDB")));
+            services.AddDbContext<BikeContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("Azure")));
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info { Title = "BikeRental-API", Version = "v1" });
             });

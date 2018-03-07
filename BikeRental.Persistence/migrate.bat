@@ -1,5 +1,10 @@
 set /p migration=Migration-Name:
-dotnet ef migrations add %migration%
+IF "%migration%" NEQ "" (
+	dotnet ef migrations add %migration%
+)
+IF %ERRORLEVEL% NEQ 0 ( 
+   pause 
+)
 dotnet ef database update
 IF %ERRORLEVEL% NEQ 0 ( 
    pause 

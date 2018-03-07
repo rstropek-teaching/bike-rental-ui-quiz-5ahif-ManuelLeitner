@@ -38,7 +38,7 @@ namespace BikeRental.Persistence {
             builder.AddJsonFile("appsettings.json").AddEnvironmentVariables();
 
             var config = builder.Build();
-            return new BikeContext(config.GetConnectionString("MSSQLLocalDB"));
+            return new BikeContext(config.GetConnectionString("Azure"));
         }
     }
 }
