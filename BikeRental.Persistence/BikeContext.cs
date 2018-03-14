@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 
 namespace BikeRental.Persistence {
@@ -16,8 +17,10 @@ namespace BikeRental.Persistence {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             if (!optionsBuilder.IsConfigured) {
                 if (string.IsNullOrWhiteSpace(ConnectionString)) {
+                    Console.WriteLine("Use in-memory DB");
                     optionsBuilder.UseInMemoryDatabase("InMemoryDB");
                 } else {
+                    Console.WriteLine("Use SQL-Server");
                     optionsBuilder.UseSqlServer(ConnectionString);
                 }
             }
