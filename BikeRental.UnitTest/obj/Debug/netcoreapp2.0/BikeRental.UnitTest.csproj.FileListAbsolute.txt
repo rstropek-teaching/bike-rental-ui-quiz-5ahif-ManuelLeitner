@@ -1,0 +1,16 @@
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\obj\Debug\netcoreapp2.0\BikeRental.UnitTest.csprojResolveAssemblyReference.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\obj\Debug\netcoreapp2.0\BikeRental.UnitTest.csproj.CoreCompileInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\obj\Debug\netcoreapp2.0\BikeRental.UnitTest.AssemblyInfoInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\obj\Debug\netcoreapp2.0\BikeRental.UnitTest.AssemblyInfo.cs
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.UnitTest.deps.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.UnitTest.runtimeconfig.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.UnitTest.runtimeconfig.dev.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.UnitTest.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.UnitTest.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.Persistence.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\bin\Debug\netcoreapp2.0\BikeRental.Persistence.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\obj\Debug\netcoreapp2.0\BikeRental.UnitTest.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.UnitTest\obj\Debug\netcoreapp2.0\BikeRental.UnitTest.pdb

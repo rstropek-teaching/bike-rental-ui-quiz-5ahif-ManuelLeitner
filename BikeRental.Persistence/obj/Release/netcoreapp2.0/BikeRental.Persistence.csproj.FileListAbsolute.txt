@@ -1,0 +1,9 @@
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\bin\Release\netcoreapp2.0\BikeRental.Persistence.deps.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\bin\Release\netcoreapp2.0\BikeRental.Persistence.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\bin\Release\netcoreapp2.0\BikeRental.Persistence.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\obj\Release\netcoreapp2.0\BikeRental.Persistence.csprojResolveAssemblyReference.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\obj\Release\netcoreapp2.0\BikeRental.Persistence.csproj.CoreCompileInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\obj\Release\netcoreapp2.0\BikeRental.Persistence.AssemblyInfoInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\obj\Release\netcoreapp2.0\BikeRental.Persistence.AssemblyInfo.cs
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\obj\Release\netcoreapp2.0\BikeRental.Persistence.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Persistence\obj\Release\netcoreapp2.0\BikeRental.Persistence.pdb

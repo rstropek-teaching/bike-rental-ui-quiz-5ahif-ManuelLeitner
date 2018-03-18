@@ -1,0 +1,13 @@
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.deps.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.runtimeconfig.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.runtimeconfig.dev.json
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\obj\Debug\netcoreapp2.0\BikeRental.csprojResolveAssemblyReference.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\obj\Debug\netcoreapp2.0\BikeRental.csproj.CoreCompileInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\obj\Debug\netcoreapp2.0\BikeRental.AssemblyInfoInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\obj\Debug\netcoreapp2.0\BikeRental.AssemblyInfo.cs
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\obj\Debug\netcoreapp2.0\BikeRental.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\obj\Debug\netcoreapp2.0\BikeRental.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.Persistence.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental\bin\Debug\netcoreapp2.0\BikeRental.Persistence.pdb

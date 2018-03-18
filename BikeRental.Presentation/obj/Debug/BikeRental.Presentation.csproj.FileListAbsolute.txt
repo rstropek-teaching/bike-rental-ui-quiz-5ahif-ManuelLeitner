@@ -1,0 +1,17 @@
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\MainWindow.g.cs
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\App.g.cs
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation_MarkupCompile.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation_MarkupCompile.lref
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\bin\Debug\BikeRental.Presentation.exe.config
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\bin\Debug\BikeRental.Presentation.exe
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\bin\Debug\BikeRental.Presentation.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\bin\Debug\Newtonsoft.Json.dll
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\bin\Debug\Newtonsoft.Json.xml
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\MainWindow.baml
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.g.resources
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.Properties.Resources.resources
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.csproj.GenerateResource.Cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.csproj.CoreCompileInputs.cache
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.exe
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.pdb
+G:\5. Klasse\POSE\C_Sharp\bike-rental-quiz-5ahif-ManuelLeitner\BikeRental.Presentation\obj\Debug\BikeRental.Presentation.csprojResolveAssemblyReference.cache
