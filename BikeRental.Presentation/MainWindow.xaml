@@ -1,0 +1,130 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:BikeRental.Presentation" x:Name="window" x:Class="BikeRental.Presentation.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Window.Resources>
+        <CollectionViewSource x:Key="CustomerViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Customer}, CreateList=True}"/>
+        <CollectionViewSource x:Key="BikeViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Bike}, CreateList=True}"/>
+        <CollectionViewSource x:Key="CategoryViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Category}, CreateList=True}"/>
+        <CollectionViewSource x:Key="RentalViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Rental}, CreateList=True}"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Refresh" Click="Refresh" />
+        </Menu>
+        <TabControl SelectedIndex="{Binding Mode=OneWay, Source={StaticResource BikeViewSource}}" Grid.Row="1">
+            <TabItem Header="Customers">
+                <Grid DataContext="{StaticResource CustomerViewSource}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Text="{Binding Model.CustomerFilter, ElementName=window}" TextChanged="ApplyCustomerFilter" />
+                    <DataGrid x:Name="CustomerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected" CellEditEnding="StoreCustomers" Grid.Row="1" >
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn x:Name="birthdayColumn" Header="Birthday" Width="SizeToHeader">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DatePicker SelectedDate="{Binding Birthday, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding FirstName}" Header="First Name" Width="SizeToHeader"/>
+                            <DataGridComboBoxColumn x:Name="GenderColumn" SelectedItemBinding="{Binding Gender}" Header="Gender" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding HouseNumber}" Header="House Number" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding LastName}" Header="Last Name" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding Street}" Header="Street" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding Town}" Header="Town" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding ZipCode}" Header="Zip Code" Width="SizeToHeader"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Bikes">
+                <Grid DataContext="{StaticResource BikeViewSource}">
+                    <DataGrid x:Name="BikeDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected" RowEditEnding="StoreBikes" PreviewKeyUp="DeleteBike" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Brand}" Header="Brand" Width="SizeToHeader"/>
+
+                            <DataGridComboBoxColumn Header="Category" Width="SizeToHeader"
+                                ItemsSource="{Binding Mode=OneWay, Source={StaticResource CategoryViewSource}}"
+                                SelectedValueBinding="{Binding CategoryId}"
+                                DisplayMemberPath="Name" SelectedValuePath="Id"/>
+
+                            <DataGridTemplateColumn Header="Date Of Last Service" Width="SizeToHeader">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DatePicker SelectedDate="{Binding DateOfLastService, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding Notes}" Header="Notes" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding PriceFirstHour}" Header="Price First Hour" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding PriceFollowingHours}" Header="Price Following Hours" Width="SizeToHeader"/>
+                            <DataGridTemplateColumn Header="Purchase Date" Width="SizeToHeader">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DatePicker SelectedDate="{Binding PurchaseDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Unpaid, ended rentals">
+                <Grid Background="#FFE5E5E5" DataContext="{StaticResource RentalViewSource}">
+                    <DataGrid x:Name="RentalDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="Begin" Width="SizeToHeader">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DatePicker SelectedDate="{Binding Begin, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding Cost}" Header="Cost" Width="SizeToHeader"/>
+                            <DataGridTemplateColumn Header="End" Width="SizeToHeader">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DatePicker SelectedDate="{Binding End, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="SizeToHeader"/>
+                            <DataGridCheckBoxColumn Binding="{Binding Paid}" Header="Paid" Width="SizeToHeader"/>
+                            <DataGridTextColumn Binding="{Binding Customer}" Header="Customer" Width="SizeToHeader"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <!--
+        <TabItem Header="Categories">
+            <Grid DataContext="{StaticResource CategoryViewSource}" >
+                <DataGrid x:Name="CategoryDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="SizeToHeader"/>
+                        <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="SizeToHeader"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+            </Grid>
+        </TabItem>
+        -->
+        </TabControl>
+        <Label Content="{Binding Model.Status, ElementName=window}" Grid.Row="2" Height="26" ToolTip="{Binding Model.Status, ElementName=window}"/>
+    </Grid>
+</Window>

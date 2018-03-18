@@ -11,9 +11,10 @@ using System;
 namespace BikeRental.Persistence.Migrations
 {
     [DbContext(typeof(BikeContext))]
-    partial class BikeContextModelSnapshot : ModelSnapshot
+    [Migration("20180307174513_azureInit")]
+    partial class azureInit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -129,7 +130,7 @@ namespace BikeRental.Persistence.Migrations
 
             modelBuilder.Entity("BikeRental.Persistence.Bike", b =>
                 {
-                    b.HasOne("BikeRental.Persistence.Category")
+                    b.HasOne("BikeRental.Persistence.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);

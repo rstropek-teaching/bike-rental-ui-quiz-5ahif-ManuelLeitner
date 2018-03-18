@@ -17,7 +17,7 @@ namespace BikeRental.Controllers {
 
 
         [HttpGet]
-        public async Task<IActionResult> GetRentalsAsync([FromQuery]bool onlyUnpaied, [FromQuery]int? customerId) {
+        public async Task<IActionResult> GetRentalsAsync([FromQuery]bool onlyOpen, [FromQuery]int? customerId) {
             Customer customer = null;
             if (customerId != null) {
                 customer = await context.Customers.FindAsync(customerId);
@@ -25,8 +25,8 @@ namespace BikeRental.Controllers {
                     return NotFound();
             }
 
-            return Ok(context.Rentals.Include(r => r.Customer).Include(r => r.Bike)
-                .Where(r => (r.Customer == customer || customerId == null) && !(onlyUnpaied && (r.Paid || r.Open))));
+            return Ok(context.Rentals.Include(r => r.Customer)
+                .Where(r => (r.Customer == customer || customerId == null) && !(onlyOpen && r.Paid)));
         }
 
         // GET: api/Rentals/5

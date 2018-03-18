@@ -11,9 +11,10 @@ using System;
 namespace BikeRental.Persistence.Migrations
 {
     [DbContext(typeof(BikeContext))]
-    partial class BikeContextModelSnapshot : ModelSnapshot
+    [Migration("20180215184348_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -114,7 +115,7 @@ namespace BikeRental.Persistence.Migrations
 
                     b.Property<int>("CustomerId");
 
-                    b.Property<DateTime?>("End");
+                    b.Property<DateTime>("End");
 
                     b.Property<bool>("Paid");
 
@@ -129,7 +130,7 @@ namespace BikeRental.Persistence.Migrations
 
             modelBuilder.Entity("BikeRental.Persistence.Bike", b =>
                 {
-                    b.HasOne("BikeRental.Persistence.Category")
+                    b.HasOne("BikeRental.Persistence.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -138,7 +139,7 @@ namespace BikeRental.Persistence.Migrations
             modelBuilder.Entity("BikeRental.Persistence.Rental", b =>
                 {
                     b.HasOne("BikeRental.Persistence.Bike", "Bike")
-                        .WithMany("Rentals")
+                        .WithMany()
                         .HasForeignKey("BikeId")
                         .OnDelete(DeleteBehavior.Cascade);
 

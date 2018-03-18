@@ -9,21 +9,12 @@ namespace BikeRental.Persistence {
 
         public readonly string ConnectionString;
 
-        public BikeContext(DbContextOptions<BikeContext> options) : base(options) { }
-        public BikeContext(string connectionString) {
+        public BikeContext(string connectionString = "") {
             ConnectionString = connectionString;
         }
 
-        public BikeContext() { }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<Bike>().HasOne(typeof(Category)).WithMany();
-        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            base.OnConfiguring(optionsBuilder);
             if (!optionsBuilder.IsConfigured) {
                 if (string.IsNullOrWhiteSpace(ConnectionString)) {
                     Console.WriteLine("Use in-memory DB");
@@ -33,6 +24,7 @@ namespace BikeRental.Persistence {
                     optionsBuilder.UseSqlServer(ConnectionString);
                 }
             }
+            base.OnConfiguring(optionsBuilder);
         }
 
         public DbSet<Customer> Customers { get; set; }

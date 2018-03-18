@@ -21,7 +21,7 @@ namespace BikeRental.Controllers {
             if (!string.IsNullOrWhiteSpace(lastName)) {
                 return context.Customers.Where(c => c.LastName.Contains(lastName));
             }
-            return context.Customers.ToList();
+            return context.Customers;
         }
 
         // GET: api/Customers/5

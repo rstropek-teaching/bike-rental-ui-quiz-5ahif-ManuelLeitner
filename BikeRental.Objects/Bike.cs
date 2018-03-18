@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -23,8 +24,8 @@ namespace BikeRental.Persistence {
         [Range(1, double.MaxValue)]
         [DataType(DataType.Currency)]
         public decimal PriceFollowingHours { get; set; }
-        [Required]
-        public Category Category { get; set; }
+        public int CategoryId { get; set; }
+        [JsonIgnore]
         public IEnumerable<Rental> Rentals { get; set; }
     }
 

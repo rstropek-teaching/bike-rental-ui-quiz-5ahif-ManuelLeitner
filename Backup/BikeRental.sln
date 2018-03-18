@@ -16,7 +16,6 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		BikeRental.Objects\BikeRental.Objects.projitems*{1c412851-2216-40a1-b967-dc4ce907354a}*SharedItemsImports = 4
-		BikeRental.Objects\BikeRental.Objects.projitems*{40118513-d1fd-4946-acce-7bec314657af}*SharedItemsImports = 4
 		BikeRental.Objects\BikeRental.Objects.projitems*{ab2f17d7-5627-4b44-8819-460bce5a4b60}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

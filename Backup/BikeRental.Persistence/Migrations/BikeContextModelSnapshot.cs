@@ -129,7 +129,7 @@ namespace BikeRental.Persistence.Migrations
 
             modelBuilder.Entity("BikeRental.Persistence.Bike", b =>
                 {
-                    b.HasOne("BikeRental.Persistence.Category")
+                    b.HasOne("BikeRental.Persistence.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
